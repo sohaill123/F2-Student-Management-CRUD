@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic page styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Form styles */
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+  width: calc(33.33% - 10px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+form button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  float: left;
+  clear: both;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: 0;
+  width: calc(30% - 10px);
+}
+
+/* Search styles */
+#searchContainer {
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Action buttons styles */
+td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+#submitButton {
+  clear: both;
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.empty-row {
+  height: 30px; 
+}
+
+

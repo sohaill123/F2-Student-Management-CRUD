@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management CRUD</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+</head>
+<body>
+    
+  <h1>Student Management CRUD</h1>
+  
+  <form id="studentForm">
+    
+    <!-- Input fields for student data -->
+   
+    <input type="text" id="name" placeholder="Name">
+
+    <input type="email" id="email" placeholder="Email" required>
+
+    <input type="number" id="age" placeholder="Age" required>
+    
+    <input type="text" id="grade" placeholder="GPA" required>
+    
+    <input type="text" id="degree" placeholder="degree" required>
+    
+    <button id="submitButton" type="submit">Add Student</button>
+  </form>
+  
+  <div id="searchContainer">
+    <h2>Search Students</h2>
+    <input type="text" id="searchInput" placeholder="Search by name, email, or degree">
+  </div>
+  
+  <table id="studentTable" border="border">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Student Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>GPA</th>
+        <th>Degree</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody">
+      <!-- Student rows will be dynamically added here -->
+     
+    </tbody>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
